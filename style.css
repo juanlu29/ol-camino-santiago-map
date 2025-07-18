@@ -82,16 +82,6 @@ body {
   padding: 20px 20px;
 }
 
-.tool{
-  padding: 5px 10px;
-}
-
-.tool__attributes{
-  padding: 10px 10px;
-  background-color: var(--select-border)
-}
-
-
 select {
   width: 100%;
   min-width: 15ch;
@@ -104,29 +94,6 @@ select {
   background-color: #fff;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
   font-family: var(--font-family-body);
-}
-
-input[type="color" i] {
-  appearance: auto;
-  width: 30px;
-  height: 27px;
-  cursor: default;
-  box-sizing: border-box;
-  border-width: 0.5px;
-  border-style: none;
-  border-image: initial;
-;
-}
-
-input[type="range" i] {
-  appearance: auto;
-  cursor: default;
-  color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
-  padding: initial;
-  border: initial;
-  margin: 6px;
-  min-width: 20ch;
-  max-width: 30ch;
 }
 
 /* Map */

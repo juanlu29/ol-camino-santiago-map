@@ -70,7 +70,6 @@ fetch(cs_gJSON)
   })
   .catch(error => console.error('Error loading GeoJSON:', error));
 
-
 // 5. Generamos funcion de codigos numéricos para colores colores
 //    Solución propuesta por copilot; "Rainbow palette generator"
 //    Genera colores del arcoiris equispaciados entre 1 y end. loc es el punto en el que queremos tomar el valor
