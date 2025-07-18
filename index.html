@@ -7,7 +7,54 @@
     <title>Using OpenLayers with Vite</title>
   </head>
   <body>
-    <div id="map"></div>
-    <script type="module" src="./main.js"></script>
+    <!--- 1. En el header incluyo una cabecera con el título "Caminos de Santiago"-->
+    <header>
+      <nav class="header-nav">
+        <a class="header-nav__btn header-nav__logo">“Caminos de Santiago”</a>
+      </nav>
+    </header>
+
+    <!--- 1. el div clase container representa el menu donde integraré las funcionalidades de la aplicación, 
+             personalizando cada requisito -->
+    <div class="container">
+      <div class="topPanel">
+
+        <h3 class="sidepanel__title">Propiedades</h3>
+
+        
+        <div id="info-panel" class="info-grid">
+
+          <div><strong>ID:</strong>  </div>
+          <div><strong>Nombre:</strong>  </div>
+          <div><strong>Longitud:</strong>  </div>
+          <div><strong>País:</strong>  </div>
+          <div><strong>Agrupación:</strong>  </div>
+          <div><strong>Info:</strong>  </div>
+
+        </div>
+
+        
+        
+        <div id="layer-menu">
+          <div class="grupo-capas">
+            <h3>Capas base</h3>
+            <label><input type="radio" name="base-layer" value="osm" checked> OpenStreetMap</label><br>
+            <label><input type="radio" name="base-layer" value="pnoa"> PNOA</label><br>
+            <label><input type="radio" name="base-layer" value="mtn50"> MTN50</label>
+          </div>
+
+          <div class="grupo-capas">
+            <h3>Capas vectoriales</h3>
+            <!--- 3. Botón que tendrá la funcionalidad definida en el .html de hacer zoom a la extensión de Galicia -->
+            <button id="zoom-galicia">Zoom a Galicia</button><br>
+            <label><input type="checkbox" id="rutasCamino" checked> Rutas Camino Santiago</label> <!-- 4. Dejamos el checkbock activado por defecto, puesto que se inicializa el mapa con la visualizació nde los caminos-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="map" id="map"></div>
+    <script type="module" src="./main.js"></script> 
   </body>
 </html>
